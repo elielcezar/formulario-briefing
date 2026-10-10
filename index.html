@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing — Novo site ICOP</title>
+<meta name="description" content="Ficha de briefing para o desenvolvimento do novo site do ICOP - Instituto de Carreira e Orientação Profissional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="progress-bar" aria-hidden="true"><span id="progressFill"></span></div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <img src="assets/logo.png" alt="ICOP — Instituto de Carreira &amp; Orientação Profissional" class="logo">
+    <p class="header-tag">Briefing do novo site</p>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Ficha de briefing<span>Novo site ICOP</span></h1>
+    <p class="hero-text">Olá Dra Rafaela!</p>
+    <p class="hero-text">Segue a ficha de briefing para o novo site do ICOP.</p>
+    <p class="hero-text">Fique à vontade para responder com calma, se precisar, você pode fechar a página e continuar depois.</p>      
+  </div>
+</section>
+
+<main class="container">
+
+  <nav class="toc" aria-label="Seções do briefing">
+    <a href="#s1">1. Identificação</a>
+    <a href="#s2">2. Motivo</a>
+    <a href="#s3">3. Negócio</a>
+    <a href="#s4">4. Público</a>
+    <a href="#s5">5. Conversão</a>
+    <a href="#s6">6. Conteúdo</a>
+    <a href="#s7">7. Visual</a>
+    <a href="#s8">8. Imagens</a>
+    <a href="#s9">9. Técnico</a>
+    <a href="#s10">10. Aberto</a>
+  </nav>
+
+  <form id="briefingForm" novalidate>
+
+    <!-- 1 -->
+    <section class="card" id="s1">
+      <div class="card-head c-roxo">
+        <span class="num">1</span>
+        <h2>Identificação</h2>
+      </div>
+      <div class="card-body">
+        <div class="grid-2">
+          <div class="field">
+            <label for="f1email">E-mail para retorno</label>
+            <input type="email" id="f1email" name="email" placeholder="seuemail@dominio.com">
+          </div>
+          <div class="field">
+            <label for="f1c">Melhor canal e horário para contato</label>
+            <input type="text" id="f1c" name="1.1 Melhor canal e horario para contato" placeholder="Ex.: WhatsApp, das 14h às 18h">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f1d">Prazo desejado para o site novo estar no ar</label>
+          <input type="text" id="f1d" name="1.2 Prazo desejado para o site no ar" placeholder="Ex.: até março/2026">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="card" id="s2">
+      <div class="card-head c-verde">
+        <span class="num">2</span>
+        <h2>Motivo da reconstrução</h2>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <label for="f2a">O que mais te incomoda no site atual hoje?</label>
+          <textarea id="f2a" name="2.1 O que mais incomoda no site atual" rows="4"></textarea>
+        </div>
+        <div class="field">
+          <label for="f2b">O que você gostaria de preservar?</label>
+          <textarea id="f2b" name="2.2 O que quer preservar" rows="3"></textarea>
+        </div>
+        <div class="field">
+          <label>O que você quer melhorar com o novo site? <span class="hint">(pode marcar mais de um)</span></label>
+          <div class="options">
+            <label class="opt"><input type="checkbox" name="2.3 Como mede sucesso" value="Mais consultas agendadas"><span>Mais consultas agendadas</span></label>
+            <label class="opt"><input type="checkbox" name="2.3 Como mede sucesso" value="Mais inscrições em cursos"><span>Mais inscrições em cursos</span></label>
+            <label class="opt"><input type="checkbox" name="2.3 Como mede sucesso" value="Menos perguntas repetidas no WhatsApp"><span>Menos perguntas repetidas no WhatsApp</span></label>
+            <label class="opt"><input type="checkbox" name="2.3 Como mede sucesso" value="Mais autoridade / reconhecimento"><span>Mais autoridade / reconhecimento</span></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="card" id="s3">
+      <div class="card-head c-laranja">
+        <span class="num">3</span>
+        <h2>Negócio e prioridades</h2>
+      </div>
+      <div class="card-body">
+        <p class="intro">
+          Hoje o site tem quatro frentes conectadas. Dê uma nota de prioridade comercial para os próximos 12 meses
+          (1 = mais importante, 4 = menos importante).
+        </p>
+        <div class="rank">
+          <div class="rank-row">
+            <span>Orientação profissional</span>
+            <select name="3.1 Prioridade - Orientacao profissional"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+          </div>
+          <div class="rank-row">
+            <span>Orientação de carreira</span>
+            <select name="3.1 Prioridade - Orientacao de carreira"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+          </div>
+          <div class="rank-row">
+            <span>Cursos e formação de profissionais</span>
+            <select name="3.1 Prioridade - Cursos e formacao"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+          </div>
+          <div class="rank-row">
+            <span>Conteúdo e imprensa</span>
+            <select name="3.1 Prioridade - Conteudo e imprensa"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f3d">Existe algum serviço que você quer aposentar ou esconder do site?</label>
+          <textarea id="f3d" name="3.2 Servico a aposentar ou esconder" rows="2"></textarea>
+        </div>
+        <div class="field">
+          <label for="f3e">Vai lançar algo novo em breve?</label>
+          <textarea id="f3e" name="3.3 Lancamentos previstos" rows="3"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="card" id="s4">
+      <div class="card-head c-ciano">
+        <span class="num">4</span>
+        <h2>Público</h2>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <label>Quais públicos precisam se enxergar no site? <span class="hint">(marque todos que valem)</span></label>
+          <div class="options cols">
+            <label class="opt"><input type="checkbox" name="4.1 Publicos" value="Vestibulando"><span>Vestibulando</span></label>
+            <label class="opt"><input type="checkbox" name="4.1 Publicos" value="Pai/mãe de vestibulando"><span>Pai/mãe de vestibulando</span></label>
+            <label class="opt"><input type="checkbox" name="4.1 Publicos" value="Universitário"><span>Universitário</span></label>
+            <label class="opt"><input type="checkbox" name="4.1 Publicos" value="Profissional em transição"><span>Profissional em transição</span></label>
+            <label class="opt"><input type="checkbox" name="4.1 Publicos" value="Psicólogo interessado na Formação OPC"><span>Psicólogo interessado na Formação OPC</span></label>
+            <label class="opt"><input type="checkbox" name="4.1 Publicos" value="RH de empresa"><span>RH de empresa</span></label>
+            <label class="opt"><input type="checkbox" name="4.1 Publicos" value="Escola"><span>Escola</span></label>
+            <label class="opt"><input type="checkbox" name="4.1 Publicos" value="Brasileiro morando fora"><span>Brasileiro morando fora</span></label>
+          </div>
+          <input type="text" name="4.1 Publicos - outros" placeholder="Outros públicos (opcional)">
+        </div>
+        <div class="field">
+          <label for="f4c">Qual é a principal dúvida ou medo de cada um desses públicos ao te procurar?</label>
+          <textarea id="f4c" name="4.2 Duvidas e medos por publico" rows="5"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section class="card" id="s5">
+      <div class="card-head c-roxo">
+        <span class="num">5</span>
+        <h2>Jornada e conversão</h2>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <label>Como as pessoas chegam até você hoje?</label>
+          <div class="options cols">
+            <label class="opt"><input type="checkbox" name="5.1 Canais de chegada" value="Google"><span>Google</span></label>
+            <label class="opt"><input type="checkbox" name="5.1 Canais de chegada" value="Indicação"><span>Indicação</span></label>
+            <label class="opt"><input type="checkbox" name="5.1 Canais de chegada" value="Instagram"><span>Instagram</span></label>
+            <label class="opt"><input type="checkbox" name="5.1 Canais de chegada" value="Imprensa"><span>Imprensa</span></label>
+          </div>
+          <input type="text" name="5.1 Canais de chegada - outros" placeholder="Outros canais (opcional)">
+        </div>
+        <div class="field">
+          <label for="f5b">Depois de visitar o site, qual ação você quer que a pessoa faça?</label>
+          <textarea id="f5b" name="5.2 Acao desejada apos a visita" rows="3"></textarea>
+        </div>
+        <div class="field">
+          <label>Como você prefere receber esse contato?</label>
+          <div class="options cols">
+            <label class="opt"><input type="radio" name="5.3 Forma de contato preferida" value="Agendamento direto em agenda online"><span>Agendamento direto em agenda online</span></label>
+            <label class="opt"><input type="radio" name="5.3 Forma de contato preferida" value="Formulário de triagem"><span>Formulário de triagem</span></label>
+            <label class="opt"><input type="radio" name="5.3 Forma de contato preferida" value="WhatsApp"><span>WhatsApp</span></label>
+            <label class="opt"><input type="radio" name="5.3 Forma de contato preferida" value="Telefone"><span>Telefone</span></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section class="card" id="s6">
+      <div class="card-head c-verde">
+        <span class="num">6</span>
+        <h2>Conteúdo página por página</h2>
+      </div>
+      <div class="card-body">
+        <p class="intro">
+          Para cada página do site, conte o que você gostaria de <strong>manter</strong> e o que gostaria de
+          <strong>mudar</strong>.
+        </p>
+
+        <div class="field">
+          <label for="f6home" class="pagina">Home</label>
+          <textarea id="f6home" name="6.1 Home - manter e mudar" rows="4" placeholder="O que manter e o que mudar nesta página"></textarea>
+        </div>
+        <div class="field">
+          <label for="f6sobre" class="pagina">Sobre</label>
+          <textarea id="f6sobre" name="6.2 Sobre - manter e mudar" rows="4" placeholder="O que manter e o que mudar nesta página"></textarea>
+        </div>
+        <div class="field">
+          <label for="f6op" class="pagina">Orientação Profissional</label>
+          <textarea id="f6op" name="6.3 Orientacao Profissional - manter e mudar" rows="4" placeholder="O que manter e o que mudar nesta página"></textarea>
+        </div>
+        <div class="field">
+          <label for="f6oc" class="pagina">Orientação de Carreira</label>
+          <textarea id="f6oc" name="6.4 Orientacao de Carreira - manter e mudar" rows="4" placeholder="O que manter e o que mudar nesta página"></textarea>
+        </div>
+        <div class="field">
+          <label for="f6cursos" class="pagina">Cursos</label>
+          <textarea id="f6cursos" name="6.5 Cursos - manter e mudar" rows="4" placeholder="O que manter e o que mudar nesta página"></textarea>
+        </div>
+        <div class="field">
+          <label for="f6dep" class="pagina">Depoimentos</label>
+          <textarea id="f6dep" name="6.6 Depoimentos - manter e mudar" rows="4" placeholder="O que manter e o que mudar nesta página"></textarea>
+        </div>
+        <div class="field">
+          <label for="f6not" class="pagina">Notícias</label>
+          <textarea id="f6not" name="6.7 Noticias - manter e mudar" rows="4" placeholder="O que manter e o que mudar nesta página"></textarea>
+        </div>
+        <div class="field">
+          <label for="f6contato" class="pagina">Contato</label>
+          <textarea id="f6contato" name="6.8 Contato - manter e mudar" rows="4" placeholder="O que manter e o que mudar nesta página"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="card" id="s7">
+      <div class="card-head c-laranja">
+        <span class="num">7</span>
+        <h2>Identidade visual e referências</h2>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <label>O que você tem de material de marca?</label>
+          <div class="options cols">
+            <label class="opt"><input type="checkbox" name="7.1 Materiais de marca" value="Manual de marca"><span>Manual de marca</span></label>
+            <label class="opt"><input type="checkbox" name="7.1 Materiais de marca" value="Logo em vetor (AI, EPS, SVG)"><span>Logo em vetor (AI, EPS, SVG)</span></label>
+            <label class="opt"><input type="checkbox" name="7.1 Materiais de marca" value="Cores oficiais definidas"><span>Cores oficiais definidas</span></label>
+            <label class="opt"><input type="checkbox" name="7.1 Materiais de marca" value="Não tenho nada disso"><span>Não tenho nada disso</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f7c">Escolha até três palavras que o novo site deve transmitir <span class="hint">(ex.: acolhedor, científico, sofisticado, jovem, corporativo)</span></label>
+          <input type="text" id="f7c" name="7.2 Tres palavras" placeholder="Ex.: acolhedor, científico, sofisticado">
+        </div>
+        <div class="field">
+          <label for="f7d">Cite dois ou três sites que você admira e o que gosta em cada um</label>
+          <textarea id="f7d" name="7.3 Sites que admira" rows="4"></textarea>
+        </div>
+        <div class="field">
+          <label for="f7e">Cite um ou dois sites que você acha ruins e por quê</label>
+          <textarea id="f7e" name="7.4 Sites que nao gosta" rows="3"></textarea>
+        </div>
+        <div class="field">
+          <label>Prefere um visual:</label>
+          <div class="options inline">
+            <label class="opt"><input type="radio" name="7.5 Estilo visual" value="Clean / minimalista"><span>Clean / minimalista</span></label>
+            <label class="opt"><input type="radio" name="7.5 Estilo visual" value="Colorido / ilustrado"><span>Colorido / ilustrado</span></label>
+            <label class="opt"><input type="radio" name="7.5 Estilo visual" value="Um meio-termo"><span>Um meio-termo</span></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 -->
+    <section class="card" id="s8">
+      <div class="card-head c-ciano">
+        <span class="num">8</span>
+        <h2>Imagens e provas</h2>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <label for="f8a">Tem banco de fotos profissionais suas, do consultório, de atendimentos, palestras e eventos? Quando foram feitas?</label>
+          <textarea id="f8a" name="8.1 Banco de fotos" rows="4"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 -->
+    <section class="card" id="s9">
+      <div class="card-head c-roxo">
+        <span class="num">9</span>
+        <h2>Aspectos técnicos e operacionais</h2>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <label>Quem vai atualizar o site depois de pronto?</label>
+          <div class="options cols">
+            <label class="opt"><input type="radio" name="9.1 Quem atualiza o site" value="Eu mesma"><span>Eu mesma</span></label>
+            <label class="opt"><input type="radio" name="9.1 Quem atualiza o site" value="Alguém da equipe"><span>Alguém da equipe</span></label>
+            <label class="opt"><input type="radio" name="9.1 Quem atualiza o site" value="Prefiro contrato de manutenção com vocês"><span>Prefiro contrato de manutenção com vocês</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label>Precisa ser fácil de editar sozinha?</label>
+          <div class="options inline">
+            <label class="opt"><input type="radio" name="9.2 Facilidade de edicao" value="Sim, é essencial"><span>Sim, é essencial</span></label>
+            <label class="opt"><input type="radio" name="9.2 Facilidade de edicao" value="Só para textos e notícias"><span>Só para textos e notícias</span></label>
+            <label class="opt"><input type="radio" name="9.2 Facilidade de edicao" value="Não, prefiro pedir a vocês"><span>Não, prefiro pedir a vocês</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label>Quais acessos você tem em mãos?</label>
+          <div class="options cols">
+            <label class="opt"><input type="checkbox" name="9.3 Acessos disponiveis" value="Hospedagem"><span>Hospedagem</span></label>
+            <label class="opt"><input type="checkbox" name="9.3 Acessos disponiveis" value="Painel WordPress"><span>Painel WordPress</span></label>
+            <label class="opt"><input type="checkbox" name="9.3 Acessos disponiveis" value="Domínio"><span>Domínio</span></label>
+            <label class="opt"><input type="checkbox" name="9.3 Acessos disponiveis" value="Google Analytics"><span>Google Analytics</span></label>
+            <label class="opt"><input type="checkbox" name="9.3 Acessos disponiveis" value="Google Ads"><span>Google Ads</span></label>
+            <label class="opt"><input type="checkbox" name="9.3 Acessos disponiveis" value="Não tenho / preciso localizar"><span>Não tenho / preciso localizar</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label>Precisa de versão em outro idioma <span class="hint">(brasileiros no exterior, público internacional)</span>?</label>
+          <div class="options inline">
+            <label class="opt"><input type="radio" name="9.4 Outro idioma" value="Sim"><span>Sim</span></label>
+            <label class="opt"><input type="radio" name="9.4 Outro idioma" value="Não"><span>Não</span></label>
+            <label class="opt"><input type="radio" name="9.4 Outro idioma" value="No futuro"><span>No futuro</span></label>
+          </div>
+          <input type="text" name="9.4 Outro idioma - quais" placeholder="Quais idiomas? (opcional)">
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label>O chat de WhatsApp deve continuar?</label>
+            <div class="options inline">
+              <label class="opt"><input type="radio" name="9.5 Chat de WhatsApp" value="Sim"><span>Sim</span></label>
+              <label class="opt"><input type="radio" name="9.5 Chat de WhatsApp" value="Não"><span>Não</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <label>Quer agenda online integrada?</label>
+            <div class="options cols">
+              <label class="opt"><input type="checkbox" name="9.6 Agenda online" value="Google Calendar"><span>Google Calendar</span></label>
+              <label class="opt"><input type="checkbox" name="9.6 Agenda online" value="Não preciso"><span>Não preciso</span></label>
+              <label class="opt"><input type="checkbox" name="9.6 Agenda online" value="Outro"><span>Outro</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 -->
+    <section class="card" id="s10">
+      <div class="card-head c-verde">
+        <span class="num">10</span>
+        <h2>Aberto</h2>
+      </div>
+      <div class="card-body">
+        <div class="field">
+          <label for="f10a">Algo a mais que queira comentar?</label>
+          <textarea id="f10a" name="10.1 Algo a mais que queira comentar" rows="4"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <div class="submit-area">
+      <p class="submit-note">Ao enviar, todas as respostas chegam direto no e-mail da equipe de desenvolvimento.</p>
+      <button type="submit" class="btn-send" id="btnSend">Enviar briefing</button>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </div>
+
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>ICOP</strong> — Instituto de Carreira e Orientação Profissional</p>
+    <p class="small">Briefing de desenvolvimento do novo site</p>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
